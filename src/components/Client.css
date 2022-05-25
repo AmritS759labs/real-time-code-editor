@@ -1,0 +1,13 @@
+.client{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.username{
+    font-size: 12px;
+    margin-top: 0.2rem;
+}

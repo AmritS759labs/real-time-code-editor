@@ -41,3 +41,42 @@
     transform: rotate(360deg);
   }
 }
+
+.CodeMirror-scroll{
+  min-height: calc(100vh - 10px) !important;
+  font-size: 16px;
+  line-height: 1.6;
+  padding-top: 10px;
+  overflow-y: auto;
+  /*background-color: red;*/
+}
+
+.CodeMirror{
+  min-height: calc(100vh) !important;
+  font-size: 18px;
+  line-height: 1.6;
+  padding-top: 10px;
+  overflow-y: auto;
+  text-align: left;
+}
+
+.cm-s-dracula.CodeMirror{
+  background-color: rgba(39,101,120, 0.9) !important;
+}
+
+.CodeMirror:nth-child(3){
+  display: none;
+}
+
+
+.CodeMirror pre {
+  display:block;
+}
+.CodeMirror-lines div{
+  display:block;
+}
+
+.CodeMirror__wrapper {
+  resize: both;
+  overflow: auto !important;
+}

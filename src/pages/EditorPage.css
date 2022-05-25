@@ -1,0 +1,40 @@
+.editorPageWrapper{
+    height: 100vh;
+    width: 100vw;
+    background-size: contain;
+    background-color: rgba(39,101,120, 0.9);
+}
+.logo{
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid #424242;
+    margin-bottom: 0.5rem;
+}
+.pageWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.aside{
+    width: 16%;
+    height: 100vh;
+    background-color: #246072;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.editorWrap{
+    width: 84%;
+    /*max-height: 99vh;*/
+}
+.asideInner{
+
+}
+.clientsList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    max-height: 70vh;
+}
