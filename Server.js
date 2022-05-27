@@ -6,8 +6,15 @@ const server = http.createServer(app);
 const io = new Server(server);
 const PORT = process.env.POST || 5000;
 const ACTIONS = require('./src/Actions');
+const path = require("path");
+
+app.use(express.static('build'));
+app.use((req, res, next) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'))
+})
 
 const userSocketMap = {};
+
 
 function getAllConnectedClients(roomId){
   return Array.from(io.sockets.adapter.rooms.get(roomId) || []).map((socketId) => {
